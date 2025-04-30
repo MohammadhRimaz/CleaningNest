@@ -6,9 +6,9 @@ A full-stack web application for managing cleaning service bookings, built with 
 
 ## 📸 Screenshots
 
-| Sing-In Page                        | Booking Form                                    | Admin Panel                                        |
-| ----------------------------------- | ----------------------------------------------- | -------------------------------------------------- |
-| ![Sign In](/screenshots/SignIn.png) | ![Booking Form](/screenshots/New%20Booking.png) | ![Admin Panel](/screenshots/Booking Dashboard.png) |
+| Sing-In Page                        | Booking Form                                 | Admin Panel                                       |
+| ----------------------------------- | -------------------------------------------- | ------------------------------------------------- |
+| ![Sign In](/screenshots/SignIn.png) | ![Booking Form](/screenshots/NewBooking.png) | ![Admin Panel](/screenshots/BookingDashboard.png) |
 
 ---
 
@@ -60,7 +60,7 @@ npm install
 
 ### 3. Configure Environment Variables
 
-Create .env file in the root directorie(cleaning-service).
+Create .env file in the root directory(cleaning-service).
 
 ```ini
 PORT=5000
