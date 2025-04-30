@@ -15,6 +15,7 @@ export default function BookingForm() {
 
   const [formData, setFormData] = useState({
     customer_name: "",
+    mobile_number: "",
     address: "",
     date_time: "",
     service_id: "",
@@ -34,6 +35,7 @@ export default function BookingForm() {
         if (existing) {
           setFormData({
             customer_name: existing.customer_name,
+            mobile_number: existing.mobile_number,
             address: existing.address,
             date_time: existing.date_time.slice(0, 16),
             service_id: existing.service_id._id,
@@ -93,6 +95,15 @@ export default function BookingForm() {
             placeholder="Customer Name"
             className="border w-full p-2 rounded"
             value={formData.customer_name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="tel"
+            name="mobile_number"
+            placeholder="Mobile Number"
+            className="border w-full p-2 rounded"
+            value={formData.mobile_number}
             onChange={handleChange}
             required
           />

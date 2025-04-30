@@ -4,7 +4,8 @@ import { deleteBooking } from "../api/bookings";
 import toast from "react-hot-toast";
 
 export default function BookingCard({ booking }) {
-  const { _id, customer_name, address, date_time, service_id } = booking;
+  const { _id, customer_name, mobile_number, address, date_time, service_id } =
+    booking;
 
   const handleDelete = async () => {
     if (window.confirm("Are you sure you want to delete this booking?")) {
@@ -21,6 +22,7 @@ export default function BookingCard({ booking }) {
   return (
     <div className="border p-4 rounded-md shadow-sm bg-gray-100">
       <h3 className="font-semibold text-lg">{customer_name}</h3>
+      <p className="text-md text-gray-600">{mobile_number}</p>
       <p className="text-md text-gray-600">{address}</p>
       <p className="text-md text-gray-500">
         {new Date(date_time).toLocaleString()}

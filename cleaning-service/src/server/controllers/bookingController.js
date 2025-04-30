@@ -1,4 +1,5 @@
 import Booking from "../models/Booking.js";
+import toast from "react-hot-toast";
 
 // Get all bookings
 export const getBookings = async (req, res) => {
@@ -15,9 +16,23 @@ export const getBookings = async (req, res) => {
 
 // Create a new booking
 export const createBooking = async (req, res) => {
-  const { customer_name, address, date_time, service_id, user_id } = req.body;
+  const {
+    customer_name,
+    mobile_number,
+    address,
+    date_time,
+    service_id,
+    user_id,
+  } = req.body;
 
-  if (!customer_name || !address || !date_time || !service_id || !user_id) {
+  if (
+    !customer_name ||
+    !mobile_number ||
+    !address ||
+    !date_time ||
+    !service_id ||
+    !user_id
+  ) {
     toast.error("All fields are required!");
     return;
   }
@@ -25,6 +40,7 @@ export const createBooking = async (req, res) => {
   try {
     const booking = new Booking({
       customer_name,
+      mobile_number,
       address,
       date_time,
       service_id,
