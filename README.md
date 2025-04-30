@@ -6,9 +6,14 @@ A full-stack web application for managing cleaning service bookings, built with 
 
 ## 📸 Screenshots
 
-| Sing-In Page                        | Booking Form                                 | Admin Panel                                       |
-| ----------------------------------- | -------------------------------------------- | ------------------------------------------------- |
-| ![Sign In](/screenshots/SignIn.png) | ![Booking Form](/screenshots/NewBooking.png) | ![Admin Panel](/screenshots/BookingDashboard.png) |
+Sing-In Page:
+![Sign In](/screenshots/SignIn.png)
+
+Booking Form:
+![Booking Form](/screenshots/New_Booking.png)
+
+Admin Panel:
+![Admin Panel](/screenshots/Booking_Dashboard.png)
 
 ---
 
