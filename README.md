@@ -82,6 +82,12 @@ VITE_BACKEND_URL=http://localhost:5000
 npm run dev
 ```
 
+on another terminal:
+
+```bash
+nodemon src/server/server.js
+```
+
 Then open your browser to http://localhost:5173
 
 ## 📂 Folder Structure
