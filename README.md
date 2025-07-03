@@ -53,7 +53,7 @@ Admin Panel:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/cleaning-service-app.git
+git clone https://github.com/MohammadhRimaz/CleaningNest.git
 cd cleaning-service
 ```
 
